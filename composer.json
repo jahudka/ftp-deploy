@@ -1,0 +1,26 @@
+{
+  "name": "jahudka/ftp-deploy",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.0",
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "^7.5",
+    "symfony/console": "^6.0",
+    "symfony/process": "^6.0",
+    "symfony/string": "^6.0",
+    "symfony/yaml": "^6.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "bin": ["bin/ftp-deploy"]
+}
